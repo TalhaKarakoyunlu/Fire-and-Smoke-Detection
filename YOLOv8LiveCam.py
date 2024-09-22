@@ -11,8 +11,8 @@ pygame.mixer.init()
 
 # Email sending function
 def send_email(to_email, subject, body, screenshot_path):
-    your_email = "karakoyunlutalha34@gmail.com"
-    your_password = "thayktgfiyqpzcst"  # App password
+    your_email = "YOUR_GMAIL_HERE"
+    your_password = "YOUR_APP_PASSWORD_HERE"  # App password
     
     # Create the email content
     msg = EmailMessage()
@@ -104,7 +104,7 @@ while True:
             # Play alert sound and send email
             play_alert_sound()
             email_body = "Fire has been detected. See the attached screenshot."
-            send_email("karakoyunlutalha34@gmail.com", "Fire Detected!", email_body, screenshot_path)
+            send_email("YOUR_GMAIL@gmail.com", "Fire Detected!", email_body, screenshot_path)
 
             alert_sent_fire = True  # Ensure alert is only sent once per event
             print(f"Fire screenshot saved and alert triggered: {screenshot_path}")
@@ -122,7 +122,7 @@ while True:
             # Play alert sound and send email
             play_alert_sound()
             email_body = "Smoke has been detected. See the attached screenshot."
-            send_email("karakoyunlutalha34@gmail.com", "Smoke Detected!", email_body, screenshot_path)
+            send_email("YOUR_GMAIL@gmail.com", "Smoke Detected!", email_body, screenshot_path)
 
             alert_sent_smoke = True  # Ensure alert is only sent once per event
             print(f"Smoke screenshot saved and alert triggered: {screenshot_path}")
